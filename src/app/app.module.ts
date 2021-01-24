@@ -4,10 +4,12 @@ import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { BirthdaypieComponent } from './birthdaypie/birthdaypie.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BirthdaypieComponent
   ],
   imports: [
     BrowserModule,

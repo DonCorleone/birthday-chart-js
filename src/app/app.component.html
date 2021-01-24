@@ -3,15 +3,10 @@
   </div>
   <div *ngFor="let birthdayStatistic of birthdayStatistics">
     <div>
-      <div class="chart">
-        <canvas baseChart
-          [data]="pieChartData"
-          [chartType]="pieChartType"
-          [options]="pieChartOptions"
-          [colors]="pieChartColors">
-        </canvas>
-      </div>
-      {{ birthdayStatistic.name }} : {{ birthdayStatistic.dateOfBirth }}
+      <app-birthdaypie [daysTillBirthday] = birthdayStatistic.daysTillBirthday></app-birthdaypie>
+      <div class="name-and-date">
+      {{ birthdayStatistic.name }} : {{ birthdayStatistic.dateOfBirth | date : 'longDate':'' :'de-CH'}}
+      <div>
     </div>
   </div>
 </div>
