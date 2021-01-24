@@ -3,9 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
 and
-[chart.js](https://www.chartjs.org/docs/2.7.2/)
-[ng2-charts](https://github.com/valor-software/ng2-charts)
-[chartjs-plugin-colorschemes](https://github.com/nagix/chartjs-plugin-colorschemes)
+[chart.js](https://www.chartjs.org/docs/2.7.2/)  
+[ng2-charts](https://github.com/valor-software/ng2-charts)  
+[chartjs-plugin-colorschemes](https://github.com/nagix/chartjs-plugin-colorschemes)  
 
 ## Development server
 
