@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     http.get<BirthdayStatistic[]>(baseUrl.replace('4200', '5000') + 'birthday').subscribe(result => {
-      this.birthdayStatistics = result;
+      this.birthdayStatistics = result.sort((one, two) => (one.daysTillBirthday > two.daysTillBirthday ? 1 : -1));;
     }, error => console.error(error));
   }
 
